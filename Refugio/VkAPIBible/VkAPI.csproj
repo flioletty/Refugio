@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBModels\DBModels.csproj" />
+    <ProjectReference Include="..\DBCore\DBCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="VkNet" />
+    <None Remove="AngleSharp" />
+    <None Remove="Exception\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="VkNet" Version="1.72.0" />
+    <PackageReference Include="AngleSharp" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exception\" />
+  </ItemGroup>
+</Project>

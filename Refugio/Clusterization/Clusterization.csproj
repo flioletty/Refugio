@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBModels\DBModels.csproj" />
+    <ProjectReference Include="..\DBCore\DBCore.csproj" />
+    <ProjectReference Include="..\ProjectModels\ProjectModels.csproj" />
+    <ProjectReference Include="..\VkAPIBible\VkAPI.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dbscan" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="BrokenActivity.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
